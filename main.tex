@@ -28,6 +28,7 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
+\usepackage{mathptmx} % Times New Roman-like font
 
 
 \pagestyle{fancy}
@@ -103,6 +104,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\setlength{\footskip}{4.1pt}
+
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -114,12 +118,11 @@
     {\Huge \scshape Nur Amalia binti Jamaludin} \\ \vspace{-1pt}
     A motivated and dedicated individual seeking a dynamic role where I can leverage my skills and expertise to drive innovation and contribute meaningfully to the organization's success and growth.\\ \vspace{2pt}
     \small
-    \href{mailto:kcaponpo@umich.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{namaliaj@umich.edu}} ~\href{https://captainmememan.github.io/KirkDanielCaponpon/Home.html}{\raisebox{-0.2\height}\ \underline{Portfolio}} ~ \href{https://amaliajamaludin12.wixsite.com/amaliajamaludin}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/amaliajamaludin/}}  ~
-    \href{https://github.com/CaptainMemeMan}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/amaliajamaludin}}
+    \href{mailto:namaliaj@umich.edu}{\raisebox{-0.2\height}\faEnvelope\ \underline{namaliaj@umich.edu}} ~
+    \href{https://github.com/amaliajamaludin}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/amaliajamaludin}} ~
+    \href{https://www.linkedin.com/in/amaliajamaludin/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/amaliajamaludin/}} \\
     \vspace{-8pt}
 \end{center}
-
-
 %-----------EDUCATION-----------
 \section{Education}
 \small
@@ -174,10 +177,11 @@
     \resumeItem{Implemented route planning and itinerary sharing, synchronizing data via RESTful APIs.}
     \resumeItem{Applied Agile methodologies to manage collaboration and sprints, documenting frontend and backend structures.}
 \resumeItemListEnd
-    \vspace{-10pt}
+    \vspace{-5pt}
+\resumeSubHeadingListEnd 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
-\footnotesize % Use \small, \footnotesize, or \scriptsize for smaller font
+\footnotesize
 \resumeSubHeadingListStart
   \item{
     \textbf{Programming Languages:} Python, JavaScript, C++, SQL, Java, PHP
@@ -206,7 +210,7 @@
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
     \footnotesize
-    %\resumeSubHeadingListStart
+    %resumeSubHeadingListStart
         \begin{multicols}{2}
             \begin{itemize}[itemsep=-5pt, parsep=3pt]
                 \item\small Design Seminar Software Engineering
@@ -223,9 +227,9 @@
     %\resumeSubHeadingListEnd
 
 %-----------INVOLVEMENT---------------
-\section{Fellowship \& Awards Certificate}\vspace{-5pt}
+\section{Fellowship \& Awards Certificate}
 \footnotesize
-    \resumeSubHeadingListStart
+    \resumeSubHeadingListStart 
         \resumeSubheading{Summer Undergraduate Research Experience (SURE)}{May 2024 - Present}{Research Fellow}{University of Michigan-Dearborn}
         \vspace{1pt}
             \resumeItemListStart
