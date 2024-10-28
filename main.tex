@@ -1,0 +1,255 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Nur Amalia binti Jamaludin} \\ \vspace{-1pt}
+    A motivated and dedicated individual seeking a dynamic role where I can leverage my skills and expertise to drive innovation and contribute meaningfully to the organization's success and growth.\\ \vspace{2pt}
+    \small
+    \href{mailto:kcaponpo@umich.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{namaliaj@umich.edu}} ~\href{https://captainmememan.github.io/KirkDanielCaponpon/Home.html}{\raisebox{-0.2\height}\ \underline{Portfolio}} ~ \href{https://amaliajamaludin12.wixsite.com/amaliajamaludin}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/amaliajamaludin/}}  ~
+    \href{https://github.com/CaptainMemeMan}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/amaliajamaludin}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\small
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Michigan-Dearborn}
+{Dearborn, Michigan}
+{Bachelor of Science in \textbf{Software Engineering}} {Concentration: \textbf{Web Development}} \vspace{2pt}
+{\small\break{\textit{ Minor in \textbf{Economics}}}}
+\break{GPA: \textbf{3.97}}
+\hfill
+{\textbf{Aug 2021 -- Apr 2025}}
+\vspace{-5pt}
+  \resumeSubHeadingListEnd
+%-----------PROJECT-----------  
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+% Project 1: South Asian Multilingual Dictionary
+\resumeProjectHeading
+    {\textbf{South Asian Multilingual Dictionary} $|$ Team Lead, Backend Developer, DevOps Engineer }{Sept 2024 - Present}\vspace{-5pt}
+    {\small \break\emph{React, Express, Node.js, Google OAuth, MiDatabase, Shibboleth, UMich Container Service}}\vspace{-5pt}
+    \resumeItemListStart
+        \resumeItem{Leading the project development, coordinating with clients to gather requirements and ensure project alignment.}
+        \resumeItem{Utilizing the MERN stack and Google OAuth for app development, integrating Shibboleth for Single Sign-On (SSO).}
+        \resumeItem{Managing DevOps practices and backend development using MiDatabase for efficient data storage.}
+        \resumeItem{Documenting the software project management and applying Agile methodologies to oversee project sprints.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
+% Project 2: CityWatch
+\resumeProjectHeading
+    {\textbf{CityWatch} $|$ Frontend Developer, UI/UX Designer }{Sept 2024 - Present}\vspace{-5pt}
+    {\small \break\emph{Figma, MySQL, PhpMyAdmin, HTML, CSS, JavaScript, Django, Flask, Python, Jira}} \vspace{-5pt}
+    \resumeItemListStart
+        \resumeItem{Designed the UI/UX experience using Figma, focusing on user-friendly interfaces and navigation.}
+        \resumeItem{Developing the frontend with HTML, CSS, and JavaScript and using MySQL as the database via PhpMyAdmin.}
+        \resumeItem{Building the backend services using Flask and Django, ensuring smooth data exchange between frontend and database.}
+        \resumeItem{Applying Agile methodologies to manage frontend tasks and design iterations, using Jira to track progress.}
+        \resumeItem{Documenting frontend design choices and team management.}
+    \resumeItemListEnd  
+    \vspace{-10pt}
+
+% Project 3: TravelShare
+\resumeProjectHeading
+    {\textbf{TravelShare} $|$ Frontend Developer, UI/UX Designer}{Jan 2024 - Apr 2024}\vspace{-5pt}
+    {\small \break \emph{MongoDB, React, Express, Node.js, RESTful APIs}}\vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{Developed a travel-sharing platform with the MERN stack, using RESTful APIs for real-time itinerary collaboration.}
+    \resumeItem{Designed a user-friendly frontend UI/UX for seamless navigation of planning features.}
+    \resumeItem{Implemented route planning and itinerary sharing, synchronizing data via RESTful APIs.}
+    \resumeItem{Applied Agile methodologies to manage collaboration and sprints, documenting frontend and backend structures.}
+\resumeItemListEnd
+    \vspace{-10pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\footnotesize % Use \small, \footnotesize, or \scriptsize for smaller font
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Programming Languages:} Python, JavaScript, C++, SQL, Java, PHP
+  }
+  \item{
+    \textbf{Web Development:} HTML, CSS, React, Node.js, Figma
+  }
+  \item{
+    \textbf{Data Analysis \& Visualization:} Pandas, NumPy, Matplotlib, Seaborn, Stata
+  }
+  \item{
+    \textbf{Databases:} MySQL, MongoDB, PostgreSQL
+  }
+  \item{
+    \textbf{Technologies:} Git/GitHub, Docker, Eclipse
+  }
+  \item{
+    \textbf{Methodologies:} Agile, Scrum
+  }
+  \item{
+    \textbf{Highlighted Skills:} Software Engineering, Project Management, Strong Documentation, Technical Design, Collaboration, Debugging
+  }
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \footnotesize
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Design Seminar Software Engineering
+                \item Database Management System
+                \item Information System
+                \item Computer Network and Disc Processor
+                \item Software Engineering I \& II
+                \item Artificial Intelligence
+                \item Software Architecture \& Design Pattern
+                \item Data Structure \& Algorithm
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+\section{Fellowship \& Awards Certificate}\vspace{-5pt}
+\footnotesize
+    \resumeSubHeadingListStart
+        \resumeSubheading{Summer Undergraduate Research Experience (SURE)}{May 2024 - Present}{Research Fellow}{University of Michigan-Dearborn}
+        \vspace{1pt}
+            \resumeItemListStart
+                \resumeItem{Estimated the effect of retail health clinics on wait times 
+                using Stata.}
+                \resumeItem{Collaborated on data analysis and presented at the SURE Showcase.}\vspace{3pt}
+            \resumeItemListEnd
+
+        \resumeSubheading{Introduction to Data Science in Python}{Oct 2024}{Coursera Certificate}{Coursera}
+        \vspace{1pt}
+            \resumeItemListStart
+                \resumeItem{Completed Python-based data science coursework on data wrangling and analysis.}\vspace{3pt}
+            \resumeItemListEnd
+        
+        \resumeSubheading{James B. Angell Scholar}{Mar 2023}{University of Michigan-Dearborn}{University of Michigan-Dearborn}
+        \vspace{3pt}
+            \resumeItemListStart
+                \resumeItem{Awarded for earning straight A's across two or more terms with at least 14 credit hours per term.}\vspace{3pt}
+            \resumeItemListEnd
+
+        \resumeSubheading{University Honors}{Dec 2021}{University of Michigan-Dearborn}{University of Michigan-Dearborn}
+        \vspace{1pt}
+            \resumeItemListStart
+                \resumeItem{Recognized for achieving a GPA of 3.50+ and completing 14 credit hours.}\vspace{3pt}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\end{document}
